@@ -24,13 +24,13 @@ describe("deepReduce", () => {
 
         const actual = deepReduce(numbers);
 
-        expect(actual).toBe(2 + 4 + 6 + 8 + 10);
+        expect(actual).toBe(30);
     });
     test("sums all numbers in any nested sub arrays at any level of nesting", () => {
         const numbers = [3, [4, 2, [9, 7], 5, 1], 3];
 
         const actual = deepReduce(numbers);
 
-        expect(actual).toBe(3 + 4 + 2 + 9 + 7 + 5 + 1 + 3);
+        expect(actual).toBe(34);
     });
 });
